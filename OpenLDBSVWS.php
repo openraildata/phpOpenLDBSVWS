@@ -27,7 +27,7 @@
 
       $this->trace = $trace;
 
-      $soapOptions = array("trace"=>$this->trace,"soap_version"=>SOAP_1_2);
+      $soapOptions = array("trace"=>$this->trace,"soap_version"=>SOAP_1_2,"features"=>SOAP_SINGLE_ELEMENT_ARRAYS);
 
       if (extension_loaded("zlib")) $soapOptions["compression"] = SOAP_COMPRESSION_ACCEPT|SOAP_COMPRESSION_GZIP;
 
@@ -261,7 +261,7 @@
 
       $this->trace = $trace;
 
-      $soapOptions = array("trace"=>$this->trace,"soap_version"=>SOAP_1_2);
+      $soapOptions = array("trace"=>$this->trace,"soap_version"=>SOAP_1_2,"features"=>SOAP_SINGLE_ELEMENT_ARRAYS);
 
       if (extension_loaded("zlib")) $soapOptions["compression"] = SOAP_COMPRESSION_ACCEPT|SOAP_COMPRESSION_GZIP;
 
